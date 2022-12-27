@@ -43,7 +43,7 @@ form.addEventListener('submit', (e) => {
 });
 
 function facileMode() {
-    let time = "00:10";
+    let time = "00:30";
 
     guess.disabled = false;
     guess.style.cursor = 'pointer';
