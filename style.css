@@ -1,0 +1,121 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #000000;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container .image{
+    position: relative;
+}
+
+.container img{
+    object-fit: cover;
+    width: 270px;
+    position: relative;
+    pointer-events: none;
+}
+
+.content{
+    position: fixed;
+    width: 500px;
+    padding: 20px;
+    z-index: 1000;
+    background-color: rgb(33, 33, 33);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content h2{
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.content .guess{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+}
+
+.content-info{
+    position: fixed;
+    right: 20%;
+    top: 10px;
+    z-index: 1000;
+    color: red;
+    display: flex;
+}
+
+.content-info .timer{
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.content-info .championCount{
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.content .facile{
+    width: 40%;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+    margin-top: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.content .difficile{
+    width: 40%;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+    margin-top: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.content .reset{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+    margin-top: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.name{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    left: 40%;
+    bottom: 20px;
+    z-index: 1010;
+}
